@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../tic tak/my-app/.git"
+		},
+		{
+			"path": "../../tic tak/my-app/node_modules"
+		},
+		{
+			"path": "../../tic tak/my-app/public"
+		},
+		{
+			"path": "../../tic tak/my-app/src"
+		}
+	],
+	"settings": {
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		}
+	}
+}
