@@ -3,6 +3,7 @@ import './App.css';
 import About from './componets/About';
 import Navbar from './componets/Navbar';
 import TextForm from './componets/TextForm';
+import Alert from './componets/Alert';
 import React, { useState } from 'react';
 
 
@@ -42,6 +43,7 @@ function App() {
    
    
 <Navbar  title="Home" aboutus="Get Start" mode={mode} togglemode={togglemode}/>
+ <Alert/> 
 
 <TextForm heading=" To Capitalize"  coli={tc}/>
 
