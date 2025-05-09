@@ -5,32 +5,32 @@ import PropTypes from 'prop-types'
 export default function About(props) {
 
 
-    // const[myStyle, setMystyle]= useState({
-    //     color: 'black',
-    //     backgroundColor: props.coli
+    const[myStyle, setMystyle]= useState({
+        color: 'black',
+        backgroundColor: props.coli
 
        
-    // })
+    })
 
-// const [btntext, setBtntext] = useState("Enable Dark Mode")
+const [btntext, setBtntext] = useState("Enable Dark Mode")
 
-//      const toggle = () => {
-//         if (myStyle.color === 'black') {
-//             setMystyle({
-//                 color: 'white',
-//                 backgroundColor: 'black',
-//                 border: '1px solid white'
-//             })
-//             setBtntext("Enable Light Mode")
-//         } 
-//         else {
-//             setMystyle({
-//                 color: 'black',
-//                 backgroundColor: 'white'
-//             })
-//             setBtntext("Enable Dark Mode")
-//         }
-// };
+     const toggle = () => {
+        if (myStyle.color === 'black') {
+            setMystyle({
+                color: 'white',
+                backgroundColor: 'black',
+                border: '1px solid white'
+            })
+            setBtntext("Enable Light Mode")
+        } 
+        else {
+            setMystyle({
+                color: 'black',
+                backgroundColor: 'white'
+            })
+            setBtntext("Enable Dark Mode")
+        }
+};
 
           
     

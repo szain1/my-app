@@ -45,7 +45,7 @@ function App() {
 
 <TextForm heading=" To Capitalize"  coli={tc}/>
 
-<About coli={tc}/>
+{/* <About coli={tc}/> */}
 
 
 
