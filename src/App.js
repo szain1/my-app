@@ -14,7 +14,7 @@ function App() {
 
 
       setMode('dark');
-      document.body.style.backgroundColor = '#3653a7';
+      document.body.style.backgroundColor = '#212f3d';
     
        document.body.style.color = 'white';
      
@@ -22,7 +22,7 @@ function App() {
     if (mode === 'dark'){ {
        setMode('light');
       document.body.style.backgroundColor = 'white';
-         document.body.style.color = '#3653a7';
+         document.body.style.color = '#212f3d';
        
       
     }
@@ -32,7 +32,7 @@ function App() {
     if (mode === 'light') {
       tc = 'white';
     } else {
-      tc = 'gray';
+      tc = '#566573';
     }
     
     
