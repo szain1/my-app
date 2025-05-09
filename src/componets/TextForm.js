@@ -31,7 +31,7 @@ export default function TextForm(props) {
     <button className="btn btn-primary mx-2" onClick={handlelowClick}>Convert to thelowercase</button>
     
     <button className="btn btn-primary mx-2" onClick={()=>{setText("empaty")}}>Clear Text</button>
-    <button className="btn btn-primary mx-2" onClick={()=>{navigator.clipboard.writeText(text); alert("text copied")} }>Copy Text</button>
+    <button className="btn btn-primary mx-2" onClick={()=>{navigator.clipboard.writeText(text); alert("text copied");props.showALert("text copied", "success")} }>Copy Text</button>
     {/* <button className="btn btn-primary mx-2" onClick={()=>{alert("text copied")}}>past</button>   */}
     
   </div>
