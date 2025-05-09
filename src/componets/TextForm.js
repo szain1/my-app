@@ -1,5 +1,5 @@
 import React,{use, useState} from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 export default function TextForm(props) {
     const handleClick = ()=> {
@@ -17,10 +17,11 @@ export default function TextForm(props) {
     const[text, setText] =useState("Enter your text")
   return (
 <>
-    <div className="container my-3">
+    <div className="container my-3" 
+   >
     <h1>{props.heading}</h1>
     <div className="mb-3">
-      <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleonchange}></textarea>
+      <textarea  style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white" }} className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleonchange}></textarea>
     </div>
     <button className="btn btn-primary mx-2" onClick={handleClick}>Convert to the uppercase</button>
     <button className="btn btn-primary mx-2" onClick={handlelowClick}>Convert to thelowercase</button>
