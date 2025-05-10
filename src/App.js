@@ -52,7 +52,7 @@ function App() {
   
   return (
     <Router>
-      <Navbar title="Home" aboutus="Text form" mode={mode} togglemode={togglemode}/>
+      <Navbar title="Home" aboutus="Text Section" mode={mode} togglemode={togglemode}/>
       <Alert alert={alert}/>
       <Routes>
         <Route path="/text" element={
