@@ -34,11 +34,11 @@ export default function TextForm(props) {
     <div className="mb-3">
       <textarea  style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white" }} className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleonchange}></textarea>
     </div>
-    <button className="btn btn-primary mx-2" onClick={handleClick}>Convert to the uppercase</button>
-    <button className="btn btn-primary mx-2" onClick={handlelowClick}>Convert to thelowercase</button>
+    <button className="btn btn-primary mx-1 " onClick={handleClick}>Convert to the uppercase</button>
+    <button className="btn btn-primary mx-1 " onClick={handlelowClick}>Convert to thelowercase</button>
     
-    <button className="btn btn-primary mx-2" onClick={()=>{setText("empaty")}}>Clear Text</button>
-    <button className="btn btn-primary mx-2" onClick={()=>{navigator.clipboard.writeText(text); alert("text copied");props.showALert("text copied", "success")} }>Copy Text</button>
+    <button className="btn btn-primary mx-1 my-2 " onClick={()=>{setText("empaty")}}>Clear Text</button>
+    <button className="btn btn-primary mx-1 my-2 " onClick={()=>{navigator.clipboard.writeText(text); alert("text copied");props.showALert("text copied", "success")} }>Copy Text</button>
     {/* <button className="btn btn-primary mx-2" onClick={()=>{alert("text copied")}}>past</button>   */}
     
   </div>
