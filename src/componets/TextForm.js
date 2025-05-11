@@ -45,7 +45,7 @@ export default function TextForm(props) {
 <div className="container my-3">
     <h2>your text summery</h2>
     <p> {text.length} Character  , {text.split(" ").filter((element)=>{return element.length!=0}).length} Words</p>
-    <p> {neText} Minutes to read</p>
+    <p> {text.split(" ").length*0.008} Minutes to read</p>
     <h2>Preview</h2>
     <p>{text.length>0? text: "Enter something to preview it here"}</p>
 </div>
@@ -62,15 +62,15 @@ export default function TextForm(props) {
 
 
 
-let word=text.split(" ").length;
+// let word=text.split(" ").length;
 
-let neText;
-if(word =>60){
- let neText= word*0.008; 
- return neText;
-} 
-else{
-  let neText = 1; 
-  return neText;
-}
+// let neText;
+// if(word =>60){
+//  let neText= word*0.008; 
+//  return neText;
+// } 
+// else{
+//   let neText = 1; 
+//   return neText;
+// }
 
