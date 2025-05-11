@@ -17,8 +17,12 @@ export default function Alert(props) {
   if (!showAlert || !props.alert) return null;
 
   return (
+   
+    <div className="ct" style={{   position:"fixed", width: '100%' }}>
     <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
       <strong>{props.alert.type}</strong> {props.alert.msg}
+
+
       <button
         type="button"
         className="btn-close"
@@ -26,6 +30,9 @@ export default function Alert(props) {
         aria-label="Close"
       ></button>
     </div>
+
+    </div>   
+
   );
 }
 

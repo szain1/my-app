@@ -21,9 +21,10 @@ export default function TextForm(props) {
     const[text, setText] =useState("Enter your text")
   return (
 <>
-    <div className="container my-3" 
+    <div className="container my-3 mt-5" 
+    
    >
-    <h1>{props.heading}</h1>
+    <h1 className='mt-5'>{props.heading}</h1>
     <div className="mb-3">
       <textarea  style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white" }} className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={handleonchange}></textarea>
     </div>
