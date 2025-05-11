@@ -18,7 +18,13 @@ export default function TextForm(props) {
     const handleonchange = (event)=>{
         setText(event.target.value)
     }
-    const[text, setText] =useState("Enter your text")
+    const[text, setText] =useState("Enter your text");
+
+
+
+
+
+
   return (
 <>
     <div className="container my-3 mt-5" 
@@ -39,7 +45,7 @@ export default function TextForm(props) {
 <div className="container my-3">
     <h2>your text summery</h2>
     <p> {text.length} Character  , {text.split(" ").filter((element)=>{return element.length!=0}).length} Words</p>
-    <p> {0.008 * text.split(" ").filter((ele)=>{return ele.length >= 60}).length} Minutes to read</p>
+    <p> {neText} Minutes to read</p>
     <h2>Preview</h2>
     <p>{text.length>0? text: "Enter something to preview it here"}</p>
 </div>
@@ -52,3 +58,19 @@ export default function TextForm(props) {
   
   )
 }
+
+
+
+
+let word=text.split(" ").length;
+
+let neText;
+if(word =>60){
+ let neText= word*0.008; 
+ return neText;
+} 
+else{
+  let neText = 1; 
+  return neText;
+}
+
