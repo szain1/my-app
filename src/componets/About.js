@@ -19,14 +19,16 @@ const [btntext, setBtntext] = useState("Enable Dark Mode")
             setMystyle({
                 color: 'white',
                 backgroundColor: 'black',
-                border: '1px solid white'
+                border: '1px solid white',
+                marginTop: '20px'
             })
             setBtntext("Enable Light Mode")
         } 
         else {
             setMystyle({
                 color: 'black',
-                backgroundColor: 'white'
+                backgroundColor: 'white',
+                 marginTop: '20px'
             })
             setBtntext("Enable Dark Mode")
         }
@@ -36,7 +38,7 @@ const [btntext, setBtntext] = useState("Enable Dark Mode")
     
 
   return (
-    <div className="container my-3"  style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white" }} >
+    <div className="container my-3 mt-5"  style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white",  }} >
       <div class="accordion" id="accordionExample">
   <div class="accordion-item" style={{backgroundColor: props.coli , color: props.coli === "white" ? "black":"white" }}  >
     <h2 class="accordion-header">
