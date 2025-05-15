@@ -10,7 +10,7 @@ export default class App extends Component {
    
     return (
       <div>
-        hello{this.c}
+        hello{  this.c}
       </div>
     )
   }
