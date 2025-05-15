@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from 'react'
+
+export default function App() {
   return (
-    <div className="App">
-      first class based component
+    <div>
+      
     </div>
-  );
+  )
 }
+
 
 export default App;
