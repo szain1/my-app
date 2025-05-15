@@ -5,10 +5,12 @@ import './App.css';
 import React, { Component } from 'react'
 
 export default class App extends Component {
+   c="hello"
   render() {
+   
     return (
       <div>
-        hello
+        hello{this.c}
       </div>
     )
   }
