@@ -5,7 +5,7 @@ export class NewsItems extends Component {
     return (
       <div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" >
   <img src="..." class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
