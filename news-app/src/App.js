@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './Navbar.js';
+import Navbar from './component/Navbar';
 
 import React, { Component } from 'react'
 
@@ -10,6 +10,8 @@ export default class App extends Component {
    
     return (
    <div>
+      <Navbar/>
+      
 
    </div>
     )
