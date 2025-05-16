@@ -4,7 +4,7 @@ export class NewsItems extends Component {
   render() {
     let {title, discribtion} = this.props;
     return (
-      <div>
+      <div className="container my-4">
 
         <div class="card" >
   <img src="..." class="card-img-top" alt="..."/>
