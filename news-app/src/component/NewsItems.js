@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 
 export class NewsItems extends Component {
   render() {
-    let {title, discribtion} = this.props;
+    let {title, discribtion,imgUrl} = this.props;
     return (
       <div className="container my-4">
 
         <div class="card" >
-  <img src="..." class="card-img-top" alt="..."/>
+  <img src={imgUrl} class="card-img-top" alt="..."/>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{title}</h5>
+    <p class="card-text">{discribtion}</p>
+    <a href="#" class="btn btn-sm btn-primary">EXplore the news</a>
   </div>
 </div>
         
