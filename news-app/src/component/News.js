@@ -18,6 +18,8 @@ export class News extends Component {
     this.setState({ articles: parsedData.articles });
   }
 
+  
+
   render() {
     return (
       <div className="container my-3">
@@ -36,9 +38,9 @@ export class News extends Component {
             );
           })}
         </div>
-        <div className="container">
-          {/* <button type="button" onClick={} className="btn btn-dark">next</button>
-          <button type="button" onClick={} className="btn btn-dark">previous</button> */}
+        <div className="container d-flex justify-content-between">
+          <button type="button" onClick={handle} className="btn btn-dark">Previous</button>
+          <button type="button" onClick={handle} className="btn btn-dark">   Next</button>
         </div>
       </div>
     );
