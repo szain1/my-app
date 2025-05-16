@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import NewsItems from './component/ NewsItems';
+import NewsItems from './NewsItems';
 
 export class News extends Component {
   render() {
     return (
       <div>
+
         <NewsItems/>
-          <NewsItems/>
-        
-          <NewsItems/>
-        
-          <NewsItems/>
-        
+         <NewsItems/>
+        <NewsItems/>
+        <NewsItems/>
+       
+       
         
       </div>
     )
