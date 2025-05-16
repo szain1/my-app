@@ -12,7 +12,7 @@ export class News extends Component {
 
   async componentDidMount() {
     console.log("Hello I am componentDidMount from news component");
-    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-16&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11&page=2";
+    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-16&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11";
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({ articles: parsedData.articles });
@@ -37,8 +37,8 @@ export class News extends Component {
           })}
         </div>
         <div className="container">
-          <button type="button" onClick={} className="btn btn-dark">next</button>
-          <button type="button" onClick={} className="btn btn-dark">previous</button>
+          {/* <button type="button" onClick={} className="btn btn-dark">next</button>
+          <button type="button" onClick={} className="btn btn-dark">previous</button> */}
         </div>
       </div>
     );
