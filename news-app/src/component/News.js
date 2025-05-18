@@ -49,7 +49,7 @@ export class News extends Component {
                 <NewsItems
                   title={element.title ? element.title : " "}
                   description={element.description ? element.description : "no disption "}
-                  urlToImage={element.urlToImage ? element.urlToImage : ".."}
+                  urlToImage={element.urlToImage ? element.urlToImage : "https://biztoc.com/cdn/c02ed7c6b6e37d96_s.webp"}
                   newsUrl={element.url}
                 />
               </div>
