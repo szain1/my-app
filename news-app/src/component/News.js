@@ -18,6 +18,24 @@ export class News extends Component {
     this.setState({ articles: parsedData.articles });
   }
 
+  handleNext = async () => {
+    console.log("Next");
+    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-18&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11&page=2";
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({ articles: parsedData.articles });
+  }
+
+   handlePre = async () => {
+    console.log("Next");
+    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-18&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11";
+    let data = await fetch(url);
+    let parsedData = await data.json();
+    this.setState({ articles: parsedData.articles });
+  }
+
+  
+
   
 
   render() {
