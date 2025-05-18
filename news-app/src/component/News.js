@@ -12,7 +12,7 @@ export class News extends Component {
 
   async componentDidMount() {
     console.log("Hello I am componentDidMount from news component");
-    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-16&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11";
+    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-18&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11";
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({ articles: parsedData.articles });
@@ -31,17 +31,17 @@ export class News extends Component {
                 <NewsItems
                   title={element.title ? element.title : " "}
                   description={element.description ? element.description : "no disption "}
-                  urlToImage={element.urlToImage ? element.urlToImage : "https://techcrunch.com/wp-content/uploads/2024/05/Minecraft-keyart.jpg?resize=1200,720"}
+                  urlToImage={element.urlToImage ? element.urlToImage : ".."}
                   newsUrl={element.url}
                 />
               </div>
             );
           })}
         </div>
-        <div className="container d-flex justify-content-between">
+        {/* <div className="container d-flex justify-content-between">
           <button type="button" onClick={handle} className="btn btn-dark">Previous</button>
           <button type="button" onClick={handle} className="btn btn-dark">   Next</button>
-        </div>
+        </div> */}
       </div>
     );
   }
