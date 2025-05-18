@@ -39,8 +39,8 @@ export class News extends Component {
           })}
         </div>
         <div className="container d-flex justify-content-between">
-          <button type="button" onClick={handle} className="btn btn-dark">Previous</button>
-          <button type="button" onClick={handle} className="btn btn-dark">   Next</button>
+          <button type="button" onClick={this.handlePre} className="btn btn-dark">Previous</button>
+          <button type="button" onClick={this.handleNext} className="btn btn-dark">   Next</button>
         </div>
       </div>
     );
