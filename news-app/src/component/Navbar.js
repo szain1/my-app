@@ -39,8 +39,10 @@ export class Navbar extends Component {
     </div>
   </div>
 </nav>
+<div> helloe wolrd</div>
     )
   }
 }
 
 export default Navbar
+
