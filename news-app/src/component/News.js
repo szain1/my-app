@@ -55,6 +55,7 @@ export class News extends Component {
               </div>
             );
           })}
+          <h1>hello</h1>
         </div>
         <div className="container d-flex justify-content-between">
           <button type="button" onClick={this.handlePre} className="btn btn-dark">Previous</button>
@@ -66,3 +67,4 @@ export class News extends Component {
 }
 
 export default News;
+
