@@ -76,6 +76,7 @@ export class News extends Component {
         </div>
          
       </div>
+      <div>hello</div>
       
     );
   }
