@@ -34,7 +34,7 @@ export class News extends Component {
 
    handlePre = async () => {
     console.log("Next");
-    let url = "https://newsapi.org/v2/everything?q=tesla&from=2025-04-20&sortBy=publishedAt&apiKey=22793fc487974694bda62f38a77e3a11";
+    let url = " https://newsapi.org/v2/everything?q=pakistan&from=2025-04-20&sortBy=publishedAt&apiKey=22793fc487";
      this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
