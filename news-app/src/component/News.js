@@ -19,6 +19,8 @@ export class News extends Component {
     let parsedData = await data.json();
     this.setState({ articles: parsedData.articles });
     this.setState({ loading: false });
+    this.setState({ articles: parsedData.articles });
+    this.setState({ loading: false });
   }
 
   handleNext = async () => {
