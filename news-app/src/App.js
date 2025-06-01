@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './component/Navbar';
 import NewsItems from './component/NewsItems';
-// import Spinner from './component/Spinner';
+import Spinner from './component/Spinner';
 import News from './component/News';
 
 
